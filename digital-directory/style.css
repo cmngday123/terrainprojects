@@ -60,9 +60,8 @@ body {
     visibility: hidden;
     height: 30px;
     width: 120px;
-    background-color: rgba(230,230,230,0);
+    background-color: rgba(176,176,176,0.5);
     color: #0f45c9;
-    border: 1px solid #0f45c9;
     padding: 5px 5px;
     text-align: justify;
     letter-spacing: 3px;
