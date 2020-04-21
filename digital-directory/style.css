@@ -474,7 +474,7 @@ visibility: hidden;
 }
 .atomictree {
     position: fixed;
-    animation: atomictree 55s linear;
+    animation: atomictree 61s linear;
     animation-iteration-count: infinite;
 }
 .atomictree .atomictreetext {
@@ -546,23 +546,23 @@ footer {
 @keyframes binoculars {
     0%   {top: 54%; left: 3%;}
     25%  {top: 30%; left: 30%;}
-    50%  {top: 11%; left: 100%;}
+    50%  {top: 11%; left: 64%;}
     75%  {top: 40%; left: 77%;}
     100% {top: 54%; left: 3%;}
 }
 @keyframes CD {
-    0%   {top: 39%; left: 93%;}
+    0%   {top: 39%; left: 42%;}
     39%  {top: 6%; left: 32%;}
     49%  {top: 3%; left: 4%;}
-    64%  {top: 111%; left: 30%;}
-    100% {top: 29%; left: 93%;}
+    64%  {top: 70%; left: 30%;}
+    100% {top: 39%; left: 42%;}
 }
 @keyframes earthwindmap {
-    0%   {top: 67%; left: 100%;}
+    0%   {top: 51%; left: 100%;}
     40%  {top: 17%; left: 90%;}
     59%  {top: 23%; left: 76%;}
     94%  {top: 43%; left: 83%;}
-    100% {top: 67%; left: 94%;}
+    100% {top: 51%; left: 94%;}
 }
 @keyframes worldcam {
     0%   {top: 45%; left: 82%;}
@@ -572,19 +572,19 @@ footer {
     100% {top: 45%; left: 82%;}
 }
 @keyframes radio {
-    0%   {top: 83%; left: 45%;}
+    0%   {top: 22%; left: 17%;}
     25%  {top: 39%; left: 0%;}
     56%  {top: 42%; left:32%;}
     91%  {top: 50%; left: 53%}
-    100% {top: 83%; left: 69%;}
+    100% {top: 22%; left: 17%;}
 }
 @keyframes birdmigration {
-    0%   {top: 68%; left: 35%;}
+    0%   {top: 56%; left: 35%;}
     10%  {top: 34%; left: 16%;}
     47%  {top: 48%; left: 63%;}
     54% {top: 52%; left: 40%;}
     78%  {top: 81%; left: 20%;}
-    100% {top: 68%; left:35%;}
+    100% {top: 56%; left:35%;}
 }
 @keyframes tonegen {
     0%   {top: 5%; left: 50%;}
@@ -632,9 +632,9 @@ footer {
 }
 @keyframes sanctuaries {
     0%   {top: 54%; left: 9%;}
-    25%  {top: 86%; left: 24%;}
-    50%  {top: 69%; left: 61%;}
-    75%  {top: 92%; left: 34%;}
+    25%  {top: 17%; left: 24%;}
+    50%  {top: 34%; left: 61%;}
+    75%  {top: 46%; left: 34%;}
     100% {top: 54%; left: 9%;}
 }
 @keyframes soundcamp {
@@ -646,9 +646,9 @@ footer {
 }
 @keyframes atomictree {
     0%   {top: 39%; left: 27%;}
-    25%  {top: 72%; left: 67%;}
-    50%  {top: 89%; left: 70.9%;}
-    75%  {top: 91%; left: 52.7%;}
+    25%  {top: 59%; left: 67%;}
+    50%  {top: 23%; left: 70.9%;}
+    75%  {top: 46%; left: 52.7%;}
     100% {top: 39%; left: 27%;}
 }
 @media (max-width: 800px) {
