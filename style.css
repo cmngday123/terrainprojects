@@ -1,39 +1,39 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   cursor: url(images/cursor.png), crosshair;
 }
 
-p{
+p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-style: normal;
 }
-a{
+a {
   text-decoration-style: none;
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: #0011ff;
   transition-delay: 2ms;
 }
 
-a:visited{
+a:visited {
   color: black;
 }
 
-html, body{
+html,
+body {
   font-style: none;
   background-color: #fff;
-
 }
 
-.left{
-margin: 1px 1px 1px 1px;
+.left {
+  margin: 1px 1px 1px 1px;
 }
 
-.nav{
+.nav {
   display: flex;
   flex-direction: row;
   border-bottom-style: solid;
@@ -43,7 +43,7 @@ margin: 1px 1px 1px 1px;
   margin: 40px 0px 3px 0px;
 }
 
-.title{
+.title {
   color: black;
   font-family: aktiv-grotesk-extended, sans-serif;
   font-weight: 400;
@@ -53,53 +53,52 @@ margin: 1px 1px 1px 1px;
   padding: 0px 0px 4px 4px;
 }
 
-.social{
+.social {
   font-family: aktiv-grotesk-extended, sans-serif;
   font-weight: 400;
   font-size: 50px;
   margin: -6px 8px 5px 0px;
 }
 
-.text{
+.text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 400;
   font-style: normal;
   padding: 10px 4px 4px 4px;
 }
-.ref{
+.ref {
   font-size: 20px;
   font-weight: 400;
   display: block;
   padding: 10px 4px 4px 4px;
 }
 
-#mc_embed_signup{
+#mc_embed_signup {
   font-size: 28px;
   font-family: aktiv-grotesk-extended, sans-serif;
   /*/background-color: #fff;/*/
   width: 50%;
-  margin-right:20%;
+  margin-right: 20%;
   /*/box-sizing: border-box;
   border-radius: 100% 100%;
   background-color: #00FF07;
   box-shadow: 300px 200px 300px 200px #00FF07;/*/
   box-sizing: content-box;
   z-index: 3;
-
 }
 
-#mc_embed_signup_scroll{
+#mc_embed_signup_scroll {
   font-family: aktiv-grotesk-extended, sans-serif;
   font-size: 28px;
   border-width: 3px;
   border-color: black;
-/*/  background-color: #fff;/*/
+  /*/  background-color: #fff;/*/
   padding: 2px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-right:20%;
+  margin-right: 20%;
   box-sizing: border-box;
 }
 #mc_embed_signup input.email {
@@ -107,57 +106,55 @@ margin: 1px 1px 1px 1px;
   font-size: 30px;
   border-width: 3px;
   border-color: black;
-/*/  background-color: #fff;/*/
+  /*/  background-color: #fff;/*/
   padding: 2px;
   width: 140%;
   display: flex;
   flex-direction: column;
-  margin-right:20%;
+  margin-right: 20%;
   margin-top: 10px;
-
-  }
-  #mc_embed_signup input.submit {
-    font-family: aktiv-grotesk-extended, sans-serif;
-    font-size: 28px;
-    border-width: 3px;
-    border-color: black;
-    /*/background-color: #fff;/*/
-    padding: 2px;
-    width: 150%;
-    display: flex;
-    flex-direction: row;
-    margin-right:20%;
-    margin-top: 10px;
 }
-    #mc_embed_signup input.firstname {
-      font-family: aktiv-grotesk-extended, sans-serif;
-      font-size: 28px;
-      border-width: 3px;
-      border-color: black;
-      /*/background-color: #fff;/*/
-      padding: 2px;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      margin-right:20%;
-      margin-top: 10px;
-    }
-    #mc_embed_signup input.lastname {
-      font-family: aktiv-grotesk-extended, sans-serif;
-      font-size: 28px;
-      border-width: 3px;
-      border-color: black;
-      /*/background-color: #fff;/*/
-      padding: 2px;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      margin-right:20%;
-      margin-top: 10px;
+#mc_embed_signup input.submit {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 28px;
+  border-width: 3px;
+  border-color: black;
+  /*/background-color: #fff;/*/
+  padding: 2px;
+  width: 150%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+#mc_embed_signup input.firstname {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 28px;
+  border-width: 3px;
+  border-color: black;
+  /*/background-color: #fff;/*/
+  padding: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+#mc_embed_signup input.lastname {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 28px;
+  border-width: 3px;
+  border-color: black;
+  /*/background-color: #fff;/*/
+  padding: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-top: 10px;
 }
 
-
-.email{
+.email {
   font-family: aktiv-grotesk-extended, sans-serif;
   font-size: 30px;
   border-width: 3px;
@@ -166,7 +163,7 @@ margin: 1px 1px 1px 1px;
   width: 100%;
 }
 
-.button{
+.button {
   font-family: aktiv-grotesk, sans-serif;
   text-transform: uppercase;
   font-size: 30px;
@@ -179,19 +176,19 @@ margin: 1px 1px 1px 1px;
   width: 100%;
 }
 
-.button:hover{
+.button:hover {
   font-style: italic;
 }
 
-.right{
+.right {
   margin: 0px 10% 150px 10%;
   align-items: center;
   max-width: 800px;
 }
 
-.footer{
+.footer {
   font-family: aktiv-grotesk-extended, sans-serif;
-  background-color: #00FF07;
+  background-color: #00ff07;
   color: #000;
   font-weight: 400;
   font-style: normal;
@@ -203,9 +200,9 @@ margin: 1px 1px 1px 1px;
   z-index: 5;
 }
 
-.scroll2{
+.scroll2 {
   font-family: aktiv-grotesk-extended, sans-serif;
-  background-color: #00FF07;
+  background-color: #00ff07;
   color: #000;
   font-weight: 400;
   font-style: normal;
@@ -217,179 +214,172 @@ margin: 1px 1px 1px 1px;
   z-index: 5;
 }
 
-.circle{
+.circle {
   width: 0px;
   height: 0px;
-  margin bottom: -50px
+  margin-bottom: -50px;
   border-radius: 100% 50%;
-  background-color: #00FF07;
+  background-color: #00ff07;
   box-shadow: 300px 2000px 300px 2000px#00FF07;
   z-index: 3;
 }
 
-.earth{
+.earth {
   top: 450px;
   right: 25%;
   margin: 25% 25%;
   z-index: 1;
-
 }
 @media (min-width: 1024px) {
+  .left {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    margin-left: 60%;
+  }
 
+  .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    display: block;
+    padding: 10px 4px 4px 4px;
+    z-index: 1;
+    width: 50%;
+    padding: 10px 0px 0px 0px;
+  }
 
-    .left{
-      display: flex;
-      flex-direction: row;
-    }
-
-    .right{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      position:fixed;
-      margin-left: 60%;
-    }
-
-    .text{
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 400;
-      font-size: 36px;
-      display: block;
-      padding: 10px 4px 4px 4px;
-      z-index: 1;
-      width: 50%;
-      padding: 10px 0px 0px 0px;
-    }
-
-    .circle{
-       width: 0px;
-       height: 0px;
-       position: relative;
-       float: right;
-       margin-bottom: 1000px;
-       border-radius: 100% 50%;
-       background-color: #82f747;
-       box-shadow: 300px 300px 300px 300px #00FF07;
-       z-index: 0;
-    }
-    #mc_embed_signup{
-      font-size: 28px;
-      font-family: aktiv-grotesk-extended, sans-serif;
-      /*/background-color: #fff;/*/
-      width: 130%;
-      margin-right:20%;
-      /*/box-sizing: border-box;
+  .circle {
+    width: 0px;
+    height: 0px;
+    position: relative;
+    float: right;
+    margin-bottom: 1000px;
+    border-radius: 100% 50%;
+    background-color: #82f747;
+    box-shadow: 300px 300px 300px 300px #00ff07;
+    z-index: 0;
+  }
+  #mc_embed_signup {
+    font-size: 28px;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    /*/background-color: #fff;/*/
+    width: 130%;
+    margin-right: 20%;
+    /*/box-sizing: border-box;
       border-radius: 100% 100%;
       background-color: #00FF07;
       box-shadow: 300px 200px 300px 200px #00FF07;
       box-sizing: content-box;/*/
-      z-index: 3;
-
-    }
-
-    #mc_embed_signup_scroll{
-      font-family: aktiv-grotesk-extended, sans-serif;
-      font-size: 28px;
-      border-width: 3px;
-      border-color: black;
-    
-      padding: 2px;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-right:20%;
-      box-sizing: border-box;
-    }
-    #mc_embed_signup input.email {
-      font-family: aktiv-grotesk-extended, sans-serif;
-      font-size: 30px;
-      border-width: 3px;
-      border-color: black;
-    /*/  background-color: #fff;/*/
-      padding: 2px;
-      width: 140%;
-      display: flex;
-      flex-direction: column;
-      margin-right:20%;
-      margin-top: 10px;
-
-      }
-      #mc_embed_signup input.submit {
-        font-family: aktiv-grotesk-extended, sans-serif;
-        font-size: 28px;
-        border-width: 3px;
-        border-color: black;
-        /*/background-color: #fff;/*/
-        padding: 2px;
-        width: 150%;
-        display: flex;
-        flex-direction: row;
-        margin-right:20%;
-        margin-top: 10px;
-}
-        #mc_embed_signup input.firstname {
-          font-family: aktiv-grotesk-extended, sans-serif;
-          font-size: 28px;
-          border-width: 3px;
-          border-color: black;
-          /*/background-color: #fff;/*/
-          padding: 2px;
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          margin-right:20%;
-          margin-top: 10px;
-        }
-        #mc_embed_signup input.lastname {
-          font-family: aktiv-grotesk-extended, sans-serif;
-          font-size: 28px;
-          border-width: 3px;
-          border-color: black;
-          /*/background-color: #fff;/*/
-          padding: 2px;
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          margin-right:20%;
-          margin-top: 10px;
-}
-    .button{
-      font-family: aktiv-grotesk-extended, sans-serif;
-      font-size: 30px;
-      box-shadow: 0px 0px 0px transparent;
-      border-width: 3px 3px 3px 3px;
-      text-shadow: 0px 0px 0px transparent;
-      border-color: black;
-      background-color: #fff;
-      padding: 2px;
-      width: 80%;
-      display: flex;
-      flex-direction: row;
-      margin-right:20%;
-      margin-top: 25px;
-    }
-
-    .email{
-      font-family: aktiv-grotesk-extended, sans-serif;
-      font-size: 30px;
-      border-width: 3px;
-      border-color: black;
-      padding: 2px;
-      width: 140%;
-      display: flex;
-      flex-direction: row;
-      margin-right:20%;
-      margin-top: 40px;
-    }
-
-    .earth{
-      float: right;
-      position: fixed;
-      top: 450px;
-      right: 60px;
-      margin: 50px 50px;
-      z-index: 1;
-
-    }
+    z-index: 3;
   }
+
+  #mc_embed_signup_scroll {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 28px;
+    border-width: 3px;
+    border-color: black;
+
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 20%;
+    box-sizing: border-box;
+  }
+  #mc_embed_signup input.email {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 30px;
+    border-width: 3px;
+    border-color: black;
+    /*/  background-color: #fff;/*/
+    padding: 2px;
+    width: 140%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+  #mc_embed_signup input.submit {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 28px;
+    border-width: 3px;
+    border-color: black;
+    /*/background-color: #fff;/*/
+    padding: 2px;
+    width: 150%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+  #mc_embed_signup input.firstname {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 28px;
+    border-width: 3px;
+    border-color: black;
+    /*/background-color: #fff;/*/
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+  #mc_embed_signup input.lastname {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 28px;
+    border-width: 3px;
+    border-color: black;
+    /*/background-color: #fff;/*/
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+  .button {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 30px;
+    box-shadow: 0px 0px 0px transparent;
+    border-width: 3px 3px 3px 3px;
+    text-shadow: 0px 0px 0px transparent;
+    border-color: black;
+    background-color: #fff;
+    padding: 2px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 25px;
+  }
+
+  .email {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 30px;
+    border-width: 3px;
+    border-color: black;
+    padding: 2px;
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 40px;
+  }
+
+  .earth {
+    float: right;
+    position: fixed;
+    top: 450px;
+    right: 60px;
+    margin: 50px 50px;
+    z-index: 1;
+  }
+}
