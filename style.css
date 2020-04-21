@@ -267,9 +267,9 @@ margin: 1px 1px 1px 1px;
        height: 0px;
        position: relative;
        float: right;
-       margin bottom: 1000px
+       margin-bottom: 1000px;
        border-radius: 100% 50%;
-       background-color: #00FF07;
+       background-color: #82f747;
        box-shadow: 300px 300px 300px 300px #00FF07;
        z-index: 0;
     }
