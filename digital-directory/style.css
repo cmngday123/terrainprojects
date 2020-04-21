@@ -631,11 +631,11 @@ footer {
     100% {top: 44%; left: 46%}
 }
 @keyframes sanctuaries {
-    0%   {top: 73%; left: 9%;}
+    0%   {top: 54%; left: 9%;}
     25%  {top: 86%; left: 24%;}
     50%  {top: 69%; left: 61%;}
     75%  {top: 92%; left: 34%;}
-    100% {top: 73%; left: 9%;}
+    100% {top: 54%; left: 9%;}
 }
 @keyframes soundcamp {
     0%   {top: 34.8%; left: 62%;}
@@ -645,11 +645,11 @@ footer {
     100% {top: 34.8%; left: 62%;}
 }
 @keyframes atomictree {
-    0%   {top: 77%; left: 84%;}
+    0%   {top: 39%; left: 27%;}
     25%  {top: 72%; left: 67%;}
     50%  {top: 89%; left: 70.9%;}
     75%  {top: 91%; left: 52.7%;}
-    100% {top: 77%; left: 84%;}
+    100% {top: 39%; left: 27%;}
 }
 @media (max-width: 800px) {
     .icon {
