@@ -565,11 +565,11 @@ footer {
     100% {top: 51%; left: 94%;}
 }
 @keyframes worldcam {
-    0%   {top: 45%; left: 82%;}
+    0%   {top: 45%; left: 31%;}
     10%  {top: 54%; left: 90%;}
-    37%  {top: 73%; left: 74%;}
-    80%  {top: 69%; left: 63%;}
-    100% {top: 45%; left: 82%;}
+    37%  {top: 22%; left: 74%;}
+    80%  {top: 31%; left: 63%;}
+    100% {top: 45%; left: 31%;}
 }
 @keyframes radio {
     0%   {top: 22%; left: 17%;}
