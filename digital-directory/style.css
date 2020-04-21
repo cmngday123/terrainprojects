@@ -617,11 +617,11 @@ footer {
     100% {top: 34%; left: 70%;}
 }
 @keyframes googleearth {
-    0%   {top: 38%; left: 44%;}
-    25%  {top: 33%; left: 26%}
-    50%  {top: 375px; left: 42%;}
+    0%   {top: 21%; left: 30%;}
+    25%  {top: 41%; left: 26%}
+    50%  {top: 26; left: 31%;}
     75%  {top: 12%; left: 52%;}
-    100% {top: 38%; left: 44%;}
+    100% {top: 21%; left: 30%;}
 }
 @keyframes gushcam {
     0%   {top: 44%; left: 46.4%;}
