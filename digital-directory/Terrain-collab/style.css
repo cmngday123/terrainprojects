@@ -1,0 +1,434 @@
+@font-face { 
+    font-family: Corona; 
+    src: url('Fonts/Corona W01 Roman.ttf'); 
+} 
+header {
+    background: rgba(230,230,230,0);
+    color: #0f45c9;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    padding: 10px;
+    font-family: 'arial', regular;
+}
+.digital-directory{
+    height: 30px;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #0f45c9;
+}
+.earth-day-button {
+    background: #0f45c9;
+    color: #82f74f;
+    font-family: 'corona', roman regular;
+    font-size: 24px;
+    margin: 10px;
+    padding: 5px;
+    position: fixed;
+    animation: earth-day-button 7s linear;
+    animation-iteration-count: infinite;
+}
+a:hover {
+    cursor: crosshair;
+}
+body {
+    background: #82f74f;
+    font-family:'corona', roman regular;
+    color: #0f45c9;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+.icon {
+    max-width: 130px;
+    position: relative;
+} 
+.zoom:hover {
+    transform: scale(1.02);
+    cursor: crosshair;
+}
+.binoculars {
+    position: fixed;
+    animation: binoculars 60s linear;
+    animation-iteration-count: infinite;
+}
+/* tooltip */
+.binoculars .binocularstext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.binoculars:hover .binocularstext {
+    visibility: visible;
+}
+.CD {
+    position: fixed;
+    animation: CD 60s linear;
+    animation-iteration-count: infinite;
+}
+/* tooltip */
+.CD .CDtext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.CD:hover .CDtext {
+    visibility: visible;
+}
+/*End Tooltip */
+.earth {
+    position: fixed;
+    animation: earth 65s linear;
+    animation-iteration-count: infinite;
+}
+/* tooltip */
+.earth .earthtext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.earth:hover .earthtext {
+    visibility: visible;
+}
+/*End Tooltip */
+.worldcam {
+    position: fixed;
+    animation: worldcam 70s linear;
+    animation-iteration-count: infinite;
+}
+/* tooltip */
+.worldcam .worldcamtext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.worldcam:hover .worldcamtext {
+    visibility: visible;
+}
+/*End Tooltip */
+.radio {
+    position: fixed;
+    animation: radio 92s linear;
+    animation-iteration-count: infinite;
+}
+/*End Tooltip */
+/* tooltip */
+.radio .radiotext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.radio:hover .radiotext {
+    visibility: visible;
+}
+/*End Tooltip */
+.birdmigration {
+    position: fixed;
+    animation: birdmigration 96s linear;
+    animation-iteration-count: infinite;
+}
+/* tooltip */
+.birdmigration .birdmigrationtext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.birdmigration:hover .birdmigrationtext {
+    visibility: visible;
+}
+/*End Tooltip */
+.tonegen {
+    position: fixed;
+    animation: tonegen 145s linear;
+    animation-iteration-count: infinite;
+}
+/* tooltip */
+.tonegen .tonegentext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.tonegen:hover .tonegentext {
+    visibility: visible;
+}
+/*End Tooltip */
+.marpi {
+    position: fixed;
+    animation: marpi 50s linear;
+    animation-iteration-count: infinite;
+}
+.marpisize {
+    size: 150%;
+}
+/* tooltip */
+.marpi .marpitext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.marpi:hover .marpitext {
+    visibility: visible;
+}
+/*End Tooltip */
+.isitdark {
+    position: fixed;
+    animation: isitdark 75s linear;
+    animation-iteration-count: infinite;
+}
+.bulb {
+    max-height: 100px;
+}
+/* tooltip */
+.isitdark .isitdarktext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.isitdark:hover .isitdarktext {
+    visibility: visible;
+}
+/*End Tooltip */
+.coffee {
+    position: fixed;
+    animation: coffee 75s linear;
+    animation-iteration-count: infinite;
+}
+/* tooltip */
+.coffee .coffeetext {
+    visibility: hidden;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(230,230,230,0);
+    color: #0f45c9;
+    border: 1px solid #0f45c9;
+    padding: 5px 5px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.coffee:hover .coffeetext {
+    visibility: visible;
+}
+/*End Tooltip */
+footer {
+    position: fixed;
+    bottom: 0px;
+    padding: 10px;
+    background: rgba(230,230,230,0);
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+}
+.terrain-logo {
+    max-height: 40px;
+    padding: 5px;
+}
+.footer-text {
+    font-size: 12px;
+    padding: 5px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+@keyframes earth-day-button {
+    0%   {top: 80px; right: 100px;}
+    25%  {top: 80px; right: 200px;}
+    50%  {top: 80px; right: 300px;}
+    75%  {top: 80px; right: 200px;}
+    100% {top: 80px; right: 100px;}
+}
+@keyframes binoculars {
+    0%   {top: 357px; left: 30px;}
+    25%  {top: 300px; left: 300px;}
+    50%  {top: 116px; left: 1000px;}
+    75%  {top: 400px; left: 777px;}
+    100% {top: 357px; left: 30px;}
+}
+@keyframes CD {
+    0%   {top: 394px; left: 931px;}
+    39%  {top: 60px; left: 32px;}
+    49%  {top: 30px; left: 40px;}
+    64%  {top: 111px; left: 300px;}
+    100% {top: 294px; left: 931px;}
+}
+@keyframes earth {
+    0%   {top: 272px; left: 1200px;}
+    40%  {top: 177px; left: 901px;}
+    59%  {top: 234px; left: 768px;}
+    94%  {top: 437px; left: 831px;}
+    100% {top: 272px; left: 1200px;}
+}
+@keyframes worldcam {
+    0%   {top: 450px; left: 821px;}
+    10%  {top: 396px; left: 902px;}
+    37%  {top: 267px; left: 741px;}
+    80%  {top: 293px; left: 635px;}
+    100% {top: 450px; left: 821px;}
+}
+@keyframes radio {
+    0%   {top: 242px; left: 400px;}
+    25%  {top: 163px; left: 0px;}
+    56%  {top: 423px; left:324px;}
+    91%  {top: 501px; left: 533px;}
+    100% {top: 242px; left: 697px;}
+}
+@keyframes birdmigration {
+    0%   {top: 122px; left: 356px;}
+    10%  {top: 341px; left: 674px;}
+    47%  {top: 299px; left: 634px;}
+    54% {top: 211px; left: 402px;}
+    78%  {top: 44px; left: 201px;}
+    100% {top: 122px; left:356px;}
+}
+@keyframes tonegen {
+    0%   {top: 50px; left: 50px;}
+    15%  {top: 250px; left: 500px;}
+    30%  {top: 50px; left: 1000px;}
+    45% {top: 250px; left: 500px;}
+    60%  {top: 50px; left: 50px;}
+    75% {top: 250px; left: -450px;}
+    90% {top: 50px; left: 50px;}
+}
+@keyframes marpi {
+    0%   {top: 200px; left: 100px;}
+    25%  {top: 450px; left: 100px;}
+    50%  {top: 450px; left: 250px;}
+    75%  {top: 200px; left: 250px;}
+    100% {top: 200px; left: 100px;}
+}
+@keyframes isitdark {
+    0%   {top: 164px; left: 923px;}
+    25%  {top: 311px; left: 736px;}
+    50%  {top: 604px; left: 622px;}
+    75%  {top: 293px; left: 784px;}
+    100% {top: 164px; left: 923px;}
+}
+@keyframes coffee {
+    0%   {top: -10px; left: 704px;}
+    25%  {top: 179px; left: 892px;}
+    50%  {top: 375px; left: 721px;}
+    75%  {top: 120px; left: 582px;}
+    100% {top: -10px; left: 704px;}
+}
+@media (max-width: 600px) {
+    .icon {
+        max-width: 80px;
+    }
+
+}
