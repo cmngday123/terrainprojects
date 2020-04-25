@@ -210,7 +210,7 @@ visibility: hidden;
     /*Position the tooltip */
     position: absolute;
 }
-.fantasticfungi:hover .fantasticfungitext {
+.earthx:hover .earthxtext {
     visibility: visible;
 }
 .fantasticfungi {
