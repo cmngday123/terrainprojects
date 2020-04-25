@@ -1,659 +1,385 @@
-@font-face { 
-    font-family: Corona; 
-    src: url('Fonts/Corona W01 Roman.ttf'); 
-} 
-header {
-    background: rgba(230,230,230,0);
-    color: #0f45c9;
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0px;
-    padding: 10px;
-    font-family: 'arial', regular;
+* {
+  margin: 0px;
+  padding: 0px;
+  cursor: url(images/cursor.png), crosshair;
 }
-.digital-directory{
-    height: 30px;
-    padding: 10px;
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 a {
-    text-decoration: none;
-    color: #0f45c9;
+  text-decoration-style: none;
+  text-decoration: none;
 }
+
 a:hover {
-    cursor: crosshair;
+  color: #0011ff;
+  transition-delay: 2ms;
 }
+
+a:visited {
+  color: black;
+}
+
+html,
 body {
-    background: #82f74f;
-    font-family:'corona', roman regular;
-    height: 100%;
-    width: 100%;
-    color: #0f45c9;
-    letter-spacing: 3px;
-    margin: 0 auto;
+  font-style: none;
+  background-color: #fff;
 }
-.icon {
-    max-width: 130px;
+
+.left {
+  margin: 1px 1px 1px 1px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 4px;
+  z-index: 1;
+  margin: 40px 0px 3px 0px;
+}
+
+.title {
+  color: black;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  width: 100%;
+  padding: 0px 0px 4px 4px;
+}
+
+.social {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  margin: -6px 8px 5px 0px;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px 4px 4px 4px;
+}
+.ref {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  padding: 10px 4px 4px 4px;
+}
+
+#mc_embed_signup {
+  font-size: 28px;
+  font-family: aktiv-grotesk-extended, sans-serif;
+  /*/background-color: #fff;/*/
+  width: 50%;
+  margin-right: 20%;
+  /*/box-sizing: border-box;
+  border-radius: 100% 100%;
+  background-color: #00FF07;
+  box-shadow: 300px 200px 300px 200px #00FF07;/*/
+  box-sizing: content-box;
+  z-index: 3;
+}
+
+#mc_embed_signup_scroll {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 28px;
+  border-width: 3px;
+  border-color: black;
+  /*/  background-color: #fff;/*/
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 20%;
+  box-sizing: border-box;
+}
+#mc_embed_signup input.email {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 30px;
+  border-width: 3px;
+  border-color: black;
+  /*/  background-color: #fff;/*/
+  padding: 2px;
+  width: 140%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+#mc_embed_signup input.submit {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 28px;
+  border-width: 3px;
+  border-color: black;
+  /*/background-color: #fff;/*/
+  padding: 2px;
+  width: 150%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+#mc_embed_signup input.firstname {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 28px;
+  border-width: 3px;
+  border-color: black;
+  /*/background-color: #fff;/*/
+  padding: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+#mc_embed_signup input.lastname {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 28px;
+  border-width: 3px;
+  border-color: black;
+  /*/background-color: #fff;/*/
+  padding: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+
+.email {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-size: 30px;
+  border-width: 3px;
+  border-color: black;
+  padding: 2px;
+  width: 100%;
+}
+
+.button {
+  font-family: aktiv-grotesk, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  box-shadow: 0px 0px 0px transparent;
+  border-width: 3px 3px 3px 3px;
+  text-shadow: 0px 0px 0px transparent;
+  border-color: black;
+  padding: 2px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.button:hover {
+  font-style: italic;
+}
+
+.right {
+  margin: 0px 10% 150px 10%;
+  align-items: center;
+  max-width: 800px;
+}
+
+.footer {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  background-color: #00ff07;
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.scroll2 {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  background-color: #00ff07;
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.circle {
+  width: 0px;
+  height: 0px;
+  margin-bottom: -50px;
+  border-radius: 100% 50%;
+  background-color: #00ff07;
+  box-shadow: 300px 2000px 300px 2000px#00FF07;
+  z-index: 3;
+}
+
+.earth {
+  top: 450px;
+  right: 25%;
+  margin: 25% 25%;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  .left {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    margin-left: 60%;
+  }
+
+  .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    display: block;
+    padding: 10px 4px 4px 4px;
+    z-index: 1;
+    width: 50%;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .circle {
+    width: 0px;
+    height: 0px;
     position: relative;
-} 
-.zoom:hover {
-    transform: scale(1.02);
-    cursor: crosshair;
-}
-.earthday {
-    position: fixed;
-    animation: earthday 60s linear;
-    animation-iteration-count: infinite;
-}
-.earthdaylive {
-    max-height: 100px;
-}
-.earthday .earthdaytext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
+    float: right;
+    margin-bottom: 1000px;
+    border-radius: 100% 50%;
+    background-color: #82f747;
+    box-shadow: 300px 300px 300px 300px #00ff07;
+    z-index: 0;
+  }
+  #mc_embed_signup {
+    font-size: 28px;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    /*/background-color: #fff;/*/
+    width: 130%;
+    margin-right: 20%;
+    /*/box-sizing: border-box;
+      border-radius: 100% 100%;
+      background-color: #00FF07;
+      box-shadow: 300px 200px 300px 200px #00FF07;
+      box-sizing: content-box;/*/
+    z-index: 3;
+  }
+
+  #mc_embed_signup_scroll {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 28px;
+    border-width: 3px;
+    border-color: black;
+
     padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.earthday:hover .earthdaytext {
-    visibility: visible;
-}
-.bunkerstream {
-    position: fixed;
-    animation: bunkerstream 45s linear;
-    animation-iteration-count: infinite;
-    z-index: 1;
-}
-.bunkerstream .bunkerstreamtext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.bunkerstream:hover .bunkerstreamtext {
-    visibility: visible;
-}
-.earthwindmap {
-    position: fixed;
-    animation: earthwindmap 35s linear;
-    animation-iteration-count: infinite;
-}
-.earthwindmap .earthwindmaptext {
-visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.clubquarantaene {
-    position: fixed;
-    animation: clubquarantaene 30s linear;
-    animation-iteration-count: infinite;
-    z-index: 1;
-}
-.clubquarantaene .clubquarantaenetext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.clubquarantaene:hover .clubquarantaenetext {
-    visibility: visible;
-}
-.binoculars {
-    position: fixed;
-    animation: binoculars 40s linear;
-    animation-iteration-count: infinite;
-}
-.binoculars .binocularstext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    overflow-wrap: break-word;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.binoculars:hover .binocularstext {
-    visibility: visible;
-}
-.CD {
-    position: fixed;
-    animation: CD 60s linear;
-    animation-iteration-count: infinite;
-}
-.CD .CDtext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.CD:hover .CDtext {
-    visibility: visible;
-}
-.earthwindmap {
-    position: fixed;
-    animation: earthwindmap 65s linear;
-    animation-iteration-count: infinite;
-}
-.earthwindmap .earthwindmaptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.earthwindmap:hover .earthwindmaptext {
-    visibility: visible;
-}
-.worldcam {
-    position: fixed;
-    animation: worldcam 70s linear;
-    animation-iteration-count: infinite;
-}
-.worldcam .worldcamtext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.worldcam:hover .worldcamtext {
-    visibility: visible;
-}
-.radio {
-    position: fixed;
-    animation: radio 92s linear;
-    animation-iteration-count: infinite;
-}
-.radio .radiotext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.radio:hover .radiotext {
-    visibility: visible;
-}
-.birdmigration {
-    position: fixed;
-    animation: birdmigration 55s linear;
-    animation-iteration-count: infinite;
-}
-.birdmigration .birdmigrationtext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.birdmigration:hover .birdmigrationtext {
-    visibility: visible;
-}
-.tonegen {
-    position: fixed;
-    animation: tonegen 35s linear;
-    animation-iteration-count: infinite;
-}
-.tonegen .tonegentext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.tonegen:hover .tonegentext {
-    visibility: visible;
-}
-.marpi {
-    position: fixed;
-    animation: marpi 50s linear;
-    animation-iteration-count: infinite;
-}
-.marpisize {
-    size: 150%;
-}
-.marpi .marpitext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.marpi:hover .marpitext {
-    visibility: visible;
-}
-.isitdark {
-    position: fixed;
-    animation: isitdark 62s linear;
-    animation-iteration-count: infinite;
-}
-.bulb {
-    max-height: 100px;
-}
-.isitdark .isitdarktext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.isitdark:hover .isitdarktext {
-    visibility: visible;
-}
-.coffee {
-    position: fixed;
-    animation: coffee 49s linear;
-    animation-iteration-count: infinite;
-}
-.coffee .coffeetext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.coffee:hover .coffeetext {
-    visibility: visible;
-}
-.googleearth {
-    position: fixed;
-    animation: googleearth 60s linear;
-    animation-iteration-count: infinite;
-}
-.googleearthicon {
-    max-height: 80px;
-}
-.googleearth .googleearthtext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.googleearth:hover .googleearthtext {
-    visibility: visible;
-}
-.gushcam {
-    position: fixed;
-    animation: gushcam 56s linear;
-    animation-iteration-count: infinite;
-}
-.gushcam .gushcamtext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.gushcam:hover .gushcamtext {
-    visibility: visible;
-}
-.about {
-    background-color: #82f74f;
-    font-size: 11px;
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    position: fixed;
-    padding: 5px 20px 5px 5px;
-    bottom: 0px;
-}
-.sanctuaries {
-    position: fixed;
-    animation: sanctuaries 43s linear;
-    animation-iteration-count: infinite;
-}
-.sanctuaries .sanctuariestext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
+    margin-right: 20%;
+    box-sizing: border-box;
+  }
+  #mc_embed_signup input.email {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 30px;
+    border-width: 3px;
+    border-color: black;
+    /*/  background-color: #fff;/*/
     padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.sanctuaries:hover .sanctuariestext {
-    visibility: visible;
-}
-.soundcamp {
-    position: fixed;
-    animation: soundcamp 55s linear;
-    animation-iteration-count: infinite;
-}
-.soundcamp .soundcamptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
+    width: 140%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+  #mc_embed_signup input.submit {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 28px;
+    border-width: 3px;
+    border-color: black;
+    /*/background-color: #fff;/*/
     padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.soundcamp:hover .soundcamptext {
-    visibility: visible;
-}
-.atomictree {
-    position: fixed;
-    animation: atomictree 61s linear;
-    animation-iteration-count: infinite;
-}
-.atomictree .atomictreetext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
+    width: 150%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+  #mc_embed_signup input.firstname {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 28px;
+    border-width: 3px;
+    border-color: black;
+    /*/background-color: #fff;/*/
     padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+  #mc_embed_signup input.lastname {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 28px;
+    border-width: 3px;
+    border-color: black;
+    /*/background-color: #fff;/*/
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+  .button {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 30px;
+    box-shadow: 0px 0px 0px transparent;
+    border-width: 3px 3px 3px 3px;
+    text-shadow: 0px 0px 0px transparent;
+    border-color: black;
+    background-color: #fff;
+    padding: 2px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 25px;
+  }
+
+  .email {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 30px;
+    border-width: 3px;
+    border-color: black;
+    padding: 2px;
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 40px;
+  }
+
+  .earth {
+    float: right;
+    position: fixed;
+    top: 450px;
+    right: 60px;
+    margin: 50px 50px;
     z-index: 1;
-}
-.atomictree:hover .atomictreetext {
-    visibility: visible;
-}
-@keyframes earthday {
-    0%   {top: 8%; right: 10%;}
-    25%  {top: 8%; right: 20%;}
-    50%  {top: 8%; right: 30%;}
-    75%  {top: 8%; right: 20%;}
-    100% {top: 8%; right: 10%;}
-}
-@keyframes bunkerstream {
-    0%   {top: 10%; left: 35%;}
-    25%  {top: 40%; left: 10%;}
-    50%  {top: 31%; left: 26%;}
-    75%  {top: 12%; left: 41%;}
-    100% {top: 10%; left: 35%;}
-}
-@keyframes clubquarantaene {
-    0%   {top: 0%; right: 70%;}
-    25%  {top: 13%; right: 60%;}
-    50%  {top: 26%; right: 46%;}
-    75%  {top: 15%; right: 58%;}
-    100% {top: 0%; right: 70%;}
-}
-@keyframes binoculars {
-    0%   {top: 60%; left: 3%;}
-    25%  {top: 47%; left: 30%;}
-    50%  {top: 32%; left: 64%;}
-    75%  {top: 47%; left: 77%;}
-    100% {top: 60%; left: 3%;}
-}
-@keyframes CD {
-    0%   {top: 19%; left: 61%;}
-    25%  {top: 6%; left: 46%;}
-    50%  {top: 3%; left: 34%;}
-    75%  {top: 70%; left: 42%;}
-    100% {top: 19%; left: 61%;}
-}
-@keyframes earthwindmap {
-    0%   {top: 51%; left: 72%;}
-    25%  {top: 17%; left: 84%;}
-    50%  {top: 23%; left: 76%;}
-    75%  {top: 43%; left: 65%;}
-    100% {top: 51%; left: 72%;}
-}
-@keyframes worldcam {
-    0%   {top: 45%; left: 31%;}
-    25%  {top: 54%; left: 90%;}
-    50%  {top: 22%; left: 74%;}
-    75%  {top: 31%; left: 63%;}
-    100% {top: 45%; left: 31%;}
-}
-@keyframes radio {
-    0%   {top: 22%; left: 17%;}
-    25%  {top: 39%; left: 0%;}
-    50%  {top: 42%; left:32%;}
-    75%  {top: 50%; left: 53%}
-    100% {top: 22%; left: 17%;}
-}
-@keyframes birdmigration {
-    0%   {top: 41%; left: 87%;}
-    25%  {top: 66%; left: 71%;}
-    50% {top: 51%; left: 61%;}
-    75%  {top: 32%; left: 77%;}
-    100% {top: 41%; left:70%;}
-}
-@keyframes tonegen {
-    0%   {top: 5%; left: 5%;}
-    15%  {top: 15%; left: 25%;}
-    30%  {top: 5%; left: 45%;}
-    45% {top: 15%; left: 65%;}
-    60%  {top: 5%; left: 45%;}
-    75% {top: 15%; left: 25%}
-    90% {top: 5%; left: 5%;}
-}
-@keyframes marpi {
-    0%   {top: 2%; left: 2%;}
-    25%  {top: 45%; left: 2%;}
-    50%  {top: 45%; left: 25%;}
-    75%  {top: 2%; left: 25%;}
-    100% {top: 2%; left: 2%;}
-}
-@keyframes isitdark {
-    0%   {top: 16%; left: 92%;}
-    25%  {top: 31%; left: 73%;}
-    50%  {top: 60%; left: 62%;}
-    75%  {top: 29%; left: 78%;}
-    100% {top: 16%; left: 92%;}
-}
-@keyframes coffee {
-    0%   {top: 34%; left: 70%;}
-    25%  {top: 17%; left: 89%;}
-    50%  {top: 37%; left: 72%;}
-    75%  {top: 12%; left: 58%;}
-    100% {top: 34%; left: 70%;}
-}
-@keyframes googleearth {
-    0%   {top: 21%; left: 30%;}
-    25%  {top: 41%; left: 26%}
-    50%  {top: 26; left: 31%;}
-    75%  {top: 12%; left: 52%;}
-    100% {top: 21%; left: 30%;}
-}
-@keyframes gushcam {
-    0%   {top: 44%; left: 46.4%;}
-    25%  {top: 33.3%; left: 58%;}
-    50%  {top: 26%; left: 45%;}
-    75%  {top: 13%; left: 52%}
-    100% {top: 44%; left: 46%}
-}
-@keyframes sanctuaries {
-    0%   {top: 54%; left: 9%;}
-    25%  {top: 17%; left: 24%;}
-    50%  {top: 34%; left: 61%;}
-    75%  {top: 46%; left: 34%;}
-    100% {top: 54%; left: 9%;}
-}
-@keyframes soundcamp {
-    0%   {top: 34.8%; left: 62%;}
-    25%  {top: 45.9%; left: 58.1%;}
-    50%  {top: 37.6%; left: 70.9%;}
-    75%  {top: 23.2%; left: 52.7%;}
-    100% {top: 34.8%; left: 62%;}
-}
-@keyframes atomictree {
-    0%   {top: 39%; left: 27%;}
-    25%  {top: 59%; left: 67%;}
-    50%  {top: 23%; left: 70.9%;}
-    75%  {top: 46%; left: 52.7%;}
-    100% {top: 39%; left: 27%;}
-}
-@media (max-width: 800px) {
-    .icon {
-        max-width: 80px;
-    }
-    .about {
-        font-size: 8px;
-    }
-}
-@media only screen and (max-width: 400px) {
-.about {display:none;}
+  }
 }
