@@ -215,7 +215,7 @@ visibility: hidden;
 }
 .fantasticfungi {
     position: fixed;
-    animation: fantasticfungi 40s linear;
+    animation: fantasticfungi 60s linear;
     animation-iteration-count: infinite;
 }
 .fantasticfungi {
