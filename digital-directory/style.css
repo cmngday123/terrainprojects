@@ -163,6 +163,33 @@ visibility: hidden;
 .CD:hover .CDtext {
     visibility: visible;
 }
+.earthday {
+    position: fixed;
+    animation: earthday 60s linear;
+    animation-iteration-count: infinite;
+}
+.earthdaylive {
+    max-height: 100px;
+}
+.earthday .earthdaytext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(170,170,170,1);
+    color: #0f45c9;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.earthday:hover .earthdaytext {
+    visibility: visible;
+}
 .earthwindmap {
     position: fixed;
     animation: earthwindmap 65s linear;
