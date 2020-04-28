@@ -1,5 +1,5 @@
 const about = document.getElementById("about-button");
-const popup = document.getElementById("popup");
+const popup = document.getElementById("about-popup");
 const x = document.getElementById("x");
 
 about.addEventListener("click", () => {
@@ -10,14 +10,14 @@ x.addEventListener("click", () => {
   popup.className = "hidden";
 });
 
-const about = document.getElementById("index-button");
-const popup = document.getElementById("popup");
-const x = document.getElementById("x");
+const indexButton = document.getElementById("index-button");
+const indexPopup = document.getElementById("index-popup");
+const y = document.getElementById("x");
 
-about.addEventListener("click", () => {
-  popup.className = "";
+indexButton.addEventListener("click", () => {
+  indexPopup.className = "";
 });
 
-x.addEventListener("click", () => {
-  popup.className = "hidden";
+y.addEventListener("click", () => {
+  indexPopup.className = "hidden";
 });
