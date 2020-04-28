@@ -12,12 +12,12 @@ x.addEventListener("click", () => {
 
 const indexButton = document.getElementById("index-button");
 const indexPopup = document.getElementById("index-popup");
-const y = document.getElementById("x");
+const indexX = document.getElementById("index-x");
 
 indexButton.addEventListener("click", () => {
   indexPopup.className = "";
 });
 
-y.addEventListener("click", () => {
+indexX.addEventListener("click", () => {
   indexPopup.className = "hidden";
 });
