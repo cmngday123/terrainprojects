@@ -41,33 +41,7 @@ body {
     transform: scale(1.02);
     cursor: crosshair;
 }
-.earthday {
-    position: fixed;
-    animation: earthday 60s linear;
-    animation-iteration-count: infinite;
-}
-.earthdaylive {
-    max-height: 100px;
-}
-.earthday .earthdaytext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.earthday:hover .earthdaytext {
-    visibility: visible;
-}
+
 .bunkerstream {
     position: fixed;
     animation: bunkerstream 45s linear;
@@ -166,8 +140,9 @@ visibility: hidden;
 }
 .CD {
     position: fixed;
-    animation: CD 60s linear;
+    animation: CD 40s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .CD .CDtext {
     visibility: hidden;
@@ -186,6 +161,33 @@ visibility: hidden;
     z-index: 1;
 }
 .CD:hover .CDtext {
+    visibility: visible;
+}
+.earthday {
+    position: fixed;
+    animation: earthday 60s linear;
+    animation-iteration-count: infinite;
+}
+.earthdaylive {
+    max-height: 100px;
+}
+.earthday .earthdaytext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(170,170,170,1);
+    color: #0f45c9;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.earthday:hover .earthdaytext {
     visibility: visible;
 }
 .earthwindmap {
@@ -212,6 +214,58 @@ visibility: hidden;
 .earthwindmap:hover .earthwindmaptext {
     visibility: visible;
 }
+.earthx {
+    position: fixed;
+    animation: earthx 40s linear;
+    animation-iteration-count: infinite;
+}
+.earthx {
+    max-height: 100px;
+}
+.earthx .earthxtext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(170,170,170,1);
+    color: #0f45c9;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+}
+.earthx:hover .earthxtext {
+    visibility: visible;
+}
+.fantasticfungi {
+    position: fixed;
+    animation: fantasticfungi 60s linear;
+    animation-iteration-count: infinite;
+}
+.fantasticfungi {
+    max-height: 100px;
+}
+.fantasticfungi .fantasticfungitext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(170,170,170,1);
+    color: #0f45c9;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+}
+.fantasticfungi:hover .fantasticfungitext {
+    visibility: visible;
+}
 .worldcam {
     position: fixed;
     animation: worldcam 70s linear;
@@ -231,7 +285,6 @@ visibility: hidden;
     overflow: visible;
     /*Position the tooltip */
     position: absolute;
-    z-index: 1;
 }
 .worldcam:hover .worldcamtext {
     visibility: visible;
@@ -518,15 +571,7 @@ visibility: hidden;
 .atomictree:hover .atomictreetext {
     visibility: visible;
 }
-table, th, td {
-    border: 2px solid #0f45c9;
-}
-th, td {
-    padding: 2px;
-     font: inherit;
-    font-size: 10px;
-     text-align: left;
-}
+
 @keyframes earthday {
     0%   {top: 8%; right: 10%;}
     25%  {top: 8%; right: 20%;}
@@ -556,11 +601,11 @@ th, td {
     100% {top: 60%; left: 3%;}
 }
 @keyframes CD {
-    0%   {top: 19%; left: 61%;}
-    25%  {top: 6%; left: 46%;}
-    50%  {top: 3%; left: 34%;}
-    75%  {top: 70%; left: 42%;}
-    100% {top: 19%; left: 61%;}
+    0%   {top: 19%; left: 81%;}
+    25%  {top: 6%; left: 61%;}
+    50%  {top: 3%; left: 49%;}
+    75%  {top: 70%; left: 66%;}
+    100% {top: 19%; left: 81%;}
 }
 @keyframes earthwindmap {
     0%   {top: 51%; left: 72%;}
@@ -568,6 +613,20 @@ th, td {
     50%  {top: 23%; left: 76%;}
     75%  {top: 43%; left: 65%;}
     100% {top: 51%; left: 72%;}
+}
+@keyframes earthx {
+    0%   {top: 42%; left: 24%;}
+    25%  {top: 55%; left: 44%;}
+    50%  {top: 36%; left: 20%;}
+    75%  {top: 50%; left: 36%;}
+    100% {top: 42%; left: 24%;}
+}
+@keyframes fantasticfungi {
+    0%   {top: 0%; left: 65%;}
+    25%  {top: 13%; left: 34%;}
+    50%  {top: 8%; left: 0%;}
+    75%  {top: 11%; left: 34%;}
+    100% {top: 0%; left: 65%;}
 }
 @keyframes worldcam {
     0%   {top: 45%; left: 31%;}
@@ -628,11 +687,11 @@ th, td {
     100% {top: 21%; left: 30%;}
 }
 @keyframes gushcam {
-    0%   {top: 44%; left: 46.4%;}
-    25%  {top: 33.3%; left: 58%;}
-    50%  {top: 26%; left: 45%;}
-    75%  {top: 13%; left: 52%}
-    100% {top: 44%; left: 46%}
+    0%   {top: 0%; left: 46.4%;}
+    25%  {top: 18%; left: 58%;}
+    50%  {top: 34%; left: 45%;}
+    75%  {top: 16%; left: 52%}
+    100% {top: 0%; left: 46%}
 }
 @keyframes sanctuaries {
     0%   {top: 54%; left: 9%;}
@@ -649,11 +708,18 @@ th, td {
     100% {top: 34.8%; left: 62%;}
 }
 @keyframes atomictree {
-    0%   {top: 39%; left: 27%;}
+    0%   {top: 24%; left: 35%;}
     25%  {top: 59%; left: 67%;}
     50%  {top: 23%; left: 70.9%;}
     75%  {top: 46%; left: 52.7%;}
-    100% {top: 39%; left: 27%;}
+    100% {top: 24%; left: 35%;}
+}
+@keyframes yolnguradio {
+    0%   {top: 9%; left: 84%;}
+    25%  {top: 20%; left: 73%;}
+    50%  {top: 8%; left: 56%;}
+    75%  {top: 22%; left: 71%;}
+    100% {top: 9%; left: 84%;}
 }
 @media (max-width: 800px) {
     .icon {
