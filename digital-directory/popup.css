@@ -1,4 +1,4 @@
-#popup {
+#about-popup {
   background: #b0b0b0;
   margin: 10% auto;
   width: 720px;
@@ -6,7 +6,6 @@
   z-index: 100;
   position: relative;
 }
-
 .wrapper {
   width: 80%;
   margin: 30px auto;
@@ -45,12 +44,25 @@
   cursor: pointer;
 }
 
+#index-button {
+  background: #b0b0b0;
+  bottom: 120px;
+  right: 220px;
+  width: 110px;
+  position: absolute;
+  height: 60px;
+  text-align: center;
+  line-height: 58px;
+  user-select: none;
+  cursor: pointer;
+}
+
 .hidden {
   display: none;
 }
 
 @media (max-width: 768px) {
-  #popup {
+  #aboutpopup {
     width: 80%;
     font-size: 10px;
   }
@@ -58,6 +70,11 @@
     width: 88px;
   }
   #about-button {
+    bottom: 11px;
+    right: 26px;
+    width: 110px;
+  }
+  #index-button {
     bottom: 11px;
     right: 26px;
     width: 110px;

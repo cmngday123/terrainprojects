@@ -571,31 +571,7 @@ visibility: hidden;
 .atomictree:hover .atomictreetext {
     visibility: visible;
 }
-.yolnguradio {
-    position: fixed;
-    animation: yolnguradio 20s linear;
-    animation-iteration-count: infinite;
-    z-index: 1;
-}
-.yolnguradio .yolnguradiotext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(170,170,170,1);
-    color: #0f45c9;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 10px;
-    left: 110%;
-    overflow: visible;
-    /*Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.yolnguradio:hover .yolnguradiotext {
-    visibility: visible;
-}
+
 @keyframes earthday {
     0%   {top: 8%; right: 10%;}
     25%  {top: 8%; right: 20%;}
