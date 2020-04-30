@@ -94,10 +94,17 @@ th, td {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   #aboutpopup {
-    width: 80%;
+    width: 300px;
     font-size: 10px;
+    margin: 0 auto;
+  }
+  #index-popup {
+    width: 90%;
+  }
+  th, td {
+    font-size: 9px;
   }
   .img-wrapper img {
     width: 88px;
@@ -109,7 +116,7 @@ th, td {
   }
   #index-button {
     bottom: 11px;
-    right: 26px;
+    right: 162px;
     width: 110px;
   }
 }
