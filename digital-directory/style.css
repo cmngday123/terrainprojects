@@ -46,7 +46,7 @@ body {
     position: fixed;
     animation: bunkerstream 45s linear;
     animation-iteration-count: infinite;
-    z-index: 1;
+    z-index: -1;
 }
 .bunkerstream .bunkerstreamtext {
     visibility: hidden;
@@ -68,9 +68,10 @@ body {
     visibility: visible;
 }
 .earthwindmap {
-    position: fixed;
     animation: earthwindmap 35s linear;
     animation-iteration-count: infinite;
+    position: fixed;
+    z-index: -1;
 }
 .earthwindmap .earthwindmaptext {
 visibility: hidden;
@@ -88,7 +89,7 @@ visibility: hidden;
     position: absolute;
     z-index: 1;
 }
-.clubquarantaene {
+/*.clubquarantaene {
     position: fixed;
     animation: clubquarantaene 30s linear;
     animation-iteration-count: infinite;
@@ -107,16 +108,17 @@ visibility: hidden;
     left: 110%;
     overflow: visible;
     /*Position the tooltip */
-    position: absolute;
+    /*position: absolute;
     z-index: 1;
-}
+}*/
 .clubquarantaene:hover .clubquarantaenetext {
     visibility: visible;
 }
 .binoculars {
-    position: fixed;
     animation: binoculars 40s linear;
     animation-iteration-count: infinite;
+    position: fixed;
+    z-index: -1;
 }
 .binoculars .binocularstext {
     visibility: hidden;
@@ -139,9 +141,9 @@ visibility: hidden;
     visibility: visible;
 }
 .CD {
-    position: fixed;
     animation: CD 40s linear;
     animation-iteration-count: infinite;
+    position: fixed;
     z-index: -1;
 }
 .CD .CDtext {
@@ -167,6 +169,7 @@ visibility: hidden;
     position: fixed;
     animation: earthday 60s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .earthdaylive {
     max-height: 100px;
@@ -194,6 +197,7 @@ visibility: hidden;
     position: fixed;
     animation: earthwindmap 65s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .earthwindmap .earthwindmaptext {
     visibility: hidden;
@@ -218,6 +222,7 @@ visibility: hidden;
     position: fixed;
     animation: earthx 40s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .earthx {
     max-height: 100px;
@@ -244,6 +249,7 @@ visibility: hidden;
     position: fixed;
     animation: fantasticfungi 60s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .fantasticfungi {
     max-height: 100px;
@@ -270,6 +276,7 @@ visibility: hidden;
     position: fixed;
     animation: worldcam 70s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .worldcam .worldcamtext {
     visibility: hidden;
@@ -293,6 +300,7 @@ visibility: hidden;
     position: fixed;
     animation: radio 92s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .radio .radiotext {
     visibility: hidden;
@@ -317,6 +325,7 @@ visibility: hidden;
     position: fixed;
     animation: birdmigration 55s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .birdmigration .birdmigrationtext {
     visibility: hidden;
@@ -341,6 +350,7 @@ visibility: hidden;
     position: fixed;
     animation: tonegen 35s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .tonegen .tonegentext {
     visibility: hidden;
@@ -365,6 +375,7 @@ visibility: hidden;
     position: fixed;
     animation: marpi 50s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .marpisize {
     size: 150%;
@@ -392,6 +403,7 @@ visibility: hidden;
     position: fixed;
     animation: isitdark 62s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .bulb {
     max-height: 100px;
@@ -419,6 +431,7 @@ visibility: hidden;
     position: fixed;
     animation: coffee 49s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .coffee .coffeetext {
     visibility: hidden;
@@ -443,6 +456,7 @@ visibility: hidden;
     position: fixed;
     animation: googleearth 60s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .googleearthicon {
     max-height: 80px;
@@ -470,6 +484,7 @@ visibility: hidden;
     position: fixed;
     animation: gushcam 56s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .gushcam .gushcamtext {
     visibility: hidden;
@@ -503,6 +518,7 @@ visibility: hidden;
     position: fixed;
     animation: sanctuaries 43s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .sanctuaries .sanctuariestext {
     visibility: hidden;
@@ -527,6 +543,7 @@ visibility: hidden;
     position: fixed;
     animation: soundcamp 55s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .soundcamp .soundcamptext {
     visibility: hidden;
@@ -551,6 +568,7 @@ visibility: hidden;
     position: fixed;
     animation: atomictree 61s linear;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 .atomictree .atomictreetext {
     visibility: hidden;
@@ -569,6 +587,31 @@ visibility: hidden;
     z-index: 1;
 }
 .atomictree:hover .atomictreetext {
+    visibility: visible;
+}
+.yolnguradio {
+    position: fixed;
+    animation: yolnguradio 20s linear;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+.yolnguradio .yolnguradiotext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(170,170,170,1);
+    color: #0f45c9;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.yolnguradio:hover .yolnguradiotext {
     visibility: visible;
 }
 
