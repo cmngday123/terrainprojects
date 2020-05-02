@@ -539,6 +539,9 @@ visibility: hidden;
 .reveil:hover .reveiltext {
     visibility: visible;
 }
+.resize {
+    max-height: 80px;
+}
 .sanctuaries {
     position: fixed;
     animation: sanctuaries 43s linear;
