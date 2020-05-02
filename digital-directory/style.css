@@ -514,6 +514,31 @@ visibility: hidden;
     padding: 5px 20px 5px 5px;
     bottom: 0px;
 }
+.reveil {
+    position: fixed;
+    animation: reveil 43s linear;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+.reveil .reveiltext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(170,170,170,1);
+    color: #0f45c9;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.reveil:hover .reveiltext {
+    visibility: visible;
+}
 .sanctuaries {
     position: fixed;
     animation: sanctuaries 43s linear;
@@ -735,6 +760,13 @@ visibility: hidden;
     50%  {top: 34%; left: 45%;}
     75%  {top: 16%; left: 52%}
     100% {top: 0%; left: 46%}
+}
+@keyframes reveil {
+    0%   {top: 10%; left: 14%;}
+    25%  {top: 24%; left: 24%;}
+    50%  {top: 41%; left: 36%;}
+    75%  {top: 26%; left: 21%;}
+    100% {top: 10%; left: 14%;}
 }
 @keyframes sanctuaries {
     0%   {top: 54%; left: 9%;}
