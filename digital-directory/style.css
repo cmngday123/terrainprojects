@@ -89,7 +89,7 @@ visibility: hidden;
     position: absolute;
     z-index: 1;
 }
-/*.clubquarantaene {
+.clubquarantaene {
     position: fixed;
     animation: clubquarantaene 30s linear;
     animation-iteration-count: infinite;
@@ -110,7 +110,7 @@ visibility: hidden;
     /*Position the tooltip */
     /*position: absolute;
     z-index: 1;
-}*/
+}
 .clubquarantaene:hover .clubquarantaenetext {
     visibility: visible;
 }
