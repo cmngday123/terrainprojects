@@ -272,6 +272,35 @@ visibility: hidden;
 .fantasticfungi:hover .fantasticfungitext {
     visibility: visible;
 }
+.gpages {
+    position: fixed;
+    animation: gpages 45s linear;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+.gpages {
+    max-height: 100px;
+}
+.gpages .gpagestext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(170,170,170,1);
+    color: #0f45c9;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 10px;
+    left: 110%;
+    overflow: visible;
+    overflow-wrap: break-word;
+    /*Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.gpages:hover .gpagestext {
+    visibility: visible;
+}
 .worldcam {
     position: fixed;
     animation: worldcam 70s linear;
@@ -698,6 +727,13 @@ visibility: hidden;
     50%  {top: 8%; left: 0%;}
     75%  {top: 11%; left: 34%;}
     100% {top: 0%; left: 65%;}
+}
+@keyframes gpages {
+    0%   {top: 61%; left:32%;}
+    25%  {top: 53%; left: 51%;}
+    50%  {top: 59%; left: 21%;}
+    75%  {top: 48%; left: 5%;}
+    100% {top: 61%; left: 32%;}
 }
 @keyframes worldcam {
     0%   {top: 45%; left: 31%;}
