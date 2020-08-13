@@ -808,18 +808,18 @@ visibility: hidden;
     100% {top: 10%; left: 14%;}
 }
 @keyframes sanctuaries {
-    0%   {top: 54%; left: 9%;}
-    25%  {top: 17%; left: 24%;}
-    50%  {top: 34%; left: 61%;}
-    75%  {top: 46%; left: 34%;}
-    100% {top: 54%; left: 9%;}
+    0%   {top: 18%; left: 9%;}
+    25%  {top: 5%; left: 24%;}
+    50%  {top: 26%; left: 61%;}
+    75%  {top: 5%; left: 34%;}
+    100% {top: 18%; left: 9%;}
 }
 @keyframes soundcamp {
-    0%   {top: 34.8%; left: 62%;}
-    25%  {top: 45.9%; left: 58.1%;}
-    50%  {top: 37.6%; left: 70.9%;}
-    75%  {top: 23.2%; left: 52.7%;}
-    100% {top: 34.8%; left: 62%;}
+    0%   {top: 31%; left: 33%;}
+    25%  {top: 10%; left: 5%;}
+    50%  {top: 5%; left: 27%;}
+    75%  {top: 46%; left: 44%;}
+    100% {top: 31%; left: 33%;}
 }
 @keyframes atomictree {
     0%   {top: 24%; left: 35%;}
