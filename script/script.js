@@ -1,28 +1,3 @@
-// let gradient = document.querySelector(".mouse-cursor-gradient-tracking");
-// gradient.addEventListener("mousemove", (e) => {
-//   let rect = e.target.getBoundingClientRect();
-//   let x = e.clientX - rect.left;
-//   let y = e.clientY - rect.top;
-
-//   for (let i = 0; i < 10; i++) {
-//     setTimeout(() => {
-//       let trail = document.createElement("div");
-//       trail.classList.add("trail-element");
-
-//       trail.style.left = x + "px";
-//       trail.style.top = y + "px";
-
-//       gradient.appendChild(trail);
-
-//       setTimeout(() => {
-//         gradient.removeChild(trail);
-//       }, 500);
-//     }, 10);
-//   }
-
-//   gradient.style.setProperty("--x", x + "px");
-//   gradient.style.setProperty("--y", y + "px");
-// });
 /*
 Submitted by Marcin Wojtowicz [one_spook@hotmail.com] 
 Featured on JavaScript Kit (http://javascriptkit.com)
@@ -105,7 +80,7 @@ function showSubscribe() {
     iterations: 1,
   };
 
-  const subCont = document.getElementById("mc-container");
+  const subCont = document.getElementById("klaviyo-container");
   const expandBtn = document.getElementById("sub-expand");
   const closeBtn = document.getElementById("close-sub");
   const footer = document.getElementById("footer");

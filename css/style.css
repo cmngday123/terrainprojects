@@ -57,13 +57,10 @@ a {
     padding-left: calc((100vw - 300px) / 2);
   }
 }
-.multiply {
-  mix-blend-mode: multiply;
-}
 .hidden {
   display: none;
 }
-#mc-container {
+#klaviyo-container {
   width: 400px;
   position: absolute;
   bottom: 0px;
@@ -71,61 +68,7 @@ a {
   z-index: 10;
   font-size: 16px;
 }
-#mc_embed_signup_scroll {
-  font-family: "ROM";
-  width: 400px;
-  height: 305px;
-  padding-left: 0;
-  mix-blend-mode: difference;
-}
-input {
-  background-color: rgba(255, 255, 255, 0);
-  font-family: "ROM";
-  border: none;
-  border-bottom: 2px solid black;
-  font-size: 16px;
-  width: 370px;
-  padding-bottom: 5px;
-}
-.mc-field-group {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-.mc_label {
-  padding-top: 22px;
-  font-size: 16px;
-  width: 150px;
-}
-.button {
-  font-family: "ROM";
-  font-size: 16px;
-  border: 2px solid black;
-  text-align: left;
-  padding: 10px 15px;
-  margin: 5px 20px;
-  width: fit-content;
-  cursor: pointer;
-  float: right;
-}
-.button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.button:hover {
-  background-color: black;
-  color: #f6f6f6;
-  transition-duration: 0.5s;
-}
-input:focus {
-  outline: none;
-}
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+
 #close-sub {
   float: right;
   height: 30px;
@@ -183,29 +126,6 @@ footer {
     transform: translateY(0px);
   }
 }
-
-.mouse-cursor-gradient-tracking {
-  position: relative;
-  overflow: hidden;
-}
-
-.mouse-cursor-gradient-tracking::before {
-  --size: 0;
-  content: "";
-  position: absolute;
-  z-index: -5;
-  left: var(--x);
-  top: var(--y);
-  width: var(--size);
-  height: var(--size);
-  background: radial-gradient(circle closest-side, #82f74f, transparent);
-  transform: translate(-50%, -50%);
-  /* transition: width 0.2s ease, height 0.2s ease; */
-}
-
-.mouse-cursor-gradient-tracking:hover::before {
-  --size: 500px;
-}
 .trail-element {
   width: 500px;
   height: 500px;
@@ -216,12 +136,4 @@ footer {
   transform: translate(-50%, -50%);
   opacity: 0.1;
   animation: 10s colourShift infinite alternate-reverse;
-}
-@keyframe colourShift {
-  0% {
-    background: radial-gradient(circle closest-side, #82f74f, transparent);
-  }
-  100% {
-    background: radial-gradient(circle closest-side, #0f45c9, transparent);
-  }
 }
