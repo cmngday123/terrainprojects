@@ -5,19 +5,14 @@
 body::-webkit-scrollbar {
   display: none;
 }
-
 @font-face {
-  font-family: "Corona";
-  src: url("./fonts/Corona W01 Roman.ttf");
-}
-@font-face {
-  font-family: "ROM";
-  src: url("./fonts/ABCROM-Regular-Trial.otf");
+  font-family: "America Mono";
+  src: url("./fonts/GT-America-Mono-Regular.otf");
 }
 body {
   background-color: #f6f6f6;
   /* background-image: linear-gradient(#0f45c9, #f6f6f6); */
-  font-family: "ROM";
+  font-family: "America Mono";
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -29,7 +24,7 @@ a {
 }
 
 #txt-box {
-  font-family: "ROM";
+  font-family: "America Mono";
   text-align: center;
   font-size: 16px;
   position: relative;
@@ -42,7 +37,7 @@ a {
   padding-top: 30vh;
   padding-bottom: 8vh;
   position: relative;
-  font-family: "ROM";
+  font-family: "America Mono";
   z-index: 10;
   /* font-size: 200px; */
   overflow: visible;
@@ -98,19 +93,19 @@ footer {
   cursor: pointer;
 }
 .nav-button {
-  font-family: "ROM";
+  font-family: "America Mono";
   font-size: 16px;
   border: none;
   background: none;
   text-align: left;
-  padding: 10px;
-  margin: 0px;
+  padding: 6px;
+  margin: 6px;
   width: fit-content;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0);
 }
 .nav-button:hover {
-  border: 1px solid black;
+  border: 2px solid black;
 }
 .lazy-fade {
   animation: 0.5s lazyFade ease-in-out;
