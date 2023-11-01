@@ -7,7 +7,7 @@ body::-webkit-scrollbar {
 }
 @font-face {
   font-family: "America Mono";
-  src: url("./fonts/GT-America-Mono-Regular.otf");
+  src: url("./fonts/GT-America-Mono-Light.ttf");
 }
 body {
   background-color: #f6f6f6;
