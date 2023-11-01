@@ -32,8 +32,8 @@ a {
   filter: contrast(9);
 }
 #logo {
-  padding-left: calc((100vw - 370px) / 2);
-  width: 370px;
+  padding-left: calc((100vw - 600px) / 2);
+  width: 600px;
   padding-top: 30vh;
   padding-bottom: 8vh;
   position: relative;
@@ -44,12 +44,12 @@ a {
   text-align: center;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   #logo {
     padding-top: 10vh;
     padding-bottom: 4vh;
-    width: 300px;
-    padding-left: calc((100vw - 300px) / 2);
+    width: 600px;
+    padding-left: calc((100vw - 600px) / 2);
   }
 }
 .hidden {
