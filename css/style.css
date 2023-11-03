@@ -49,7 +49,7 @@ a {
   display: none;
 }
 #klaviyo-container {
-  width: 375px;
+  width: calc(100vw / 2);
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -129,6 +129,9 @@ footer {
     width: 90vw;
     padding-left: calc((100vw - 90vw) / 2);
   }
+    #klaviyo-container {
+  width: 375px;
+}
 }
 @media only screen and (max-width: 600px) {
   #logo {
@@ -149,4 +152,5 @@ footer {
 footer {
   padding: 5px;
 }
+
 }
