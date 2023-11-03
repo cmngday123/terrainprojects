@@ -7,7 +7,7 @@ body::-webkit-scrollbar {
 }
 @font-face {
   font-family: "America Mono";
-  src: url("./fonts/GT-America-Mono-Light.ttf");
+  src: url("./fonts/GT-America-Mono-Thin.otf");
 }
 body {
   background-color: #f6f6f6;
@@ -32,8 +32,8 @@ a {
   filter: contrast(9);
 }
 #logo {
-  padding-left: calc((100vw - 800px) / 2);
-  width: 800px;
+  padding-left: calc((100vw - 80vw) / 2);
+  width: 80vw;
   padding-top: 30vh;
   padding-bottom: 8vh;
   position: relative;
@@ -44,26 +44,18 @@ a {
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
-  #logo {
-    padding-top: 10vh;
-    padding-bottom: 4vh;
-    width: 800px;
-    padding-left: calc((100vw - 800px) / 2);
-  }
-}
+
 .hidden {
   display: none;
 }
 #klaviyo-container {
-  width: 400px;
+  width: 375px;
   position: absolute;
   bottom: 0px;
   left: 0;
   z-index: 10;
   font-size: 16px;
 }
-
 #close-sub {
   float: right;
   height: 30px;
@@ -73,7 +65,7 @@ a {
   cursor: pointer;
 }
 footer {
-  font-family: "America Mono";
+  font-family: "Corona";
   position: absolute;
   bottom: 0;
   padding: 5px 10px;
@@ -98,14 +90,14 @@ footer {
   border: none;
   background: none;
   text-align: left;
-  padding: 6px;
   margin: 6px;
   width: fit-content;
   cursor: pointer;
-  border: 2px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 .nav-button:hover {
-  border: 2px solid black;
+  border: 1px solid black;
+  border-radius: 15px;
 }
 .lazy-fade {
   animation: 0.5s lazyFade ease-in-out;
@@ -131,4 +123,30 @@ footer {
   transform: translate(-50%, -50%);
   opacity: 0.1;
   animation: 10s colourShift infinite alternate-reverse;
+}
+@media only screen and (max-width: 800px) {
+  #logo {
+    width: 90vw;
+    padding-left: calc((100vw - 90vw) / 2);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #logo {
+    padding-top: 35vh;
+    padding-bottom: 8vh;
+
+  }
+}
+@media only screen and (max-width: 400px) {
+  #logo {
+    padding-top: 40vh;
+    padding-bottom: 8vh;
+  }
+.nav-button {
+  font-size: 12px;
+  margin: 3px;
+}
+footer {
+  padding: 5px;
+}
 }
